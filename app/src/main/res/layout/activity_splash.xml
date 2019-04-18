@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash_ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:layoutDirection="ltr"
+    android:transitionName="@string/activity_image_trans">
+
+    <ImageView
+        android:id="@+id/splash_earth"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:src="@drawable/splash_earth" />
+
+    <RelativeLayout
+        android:id="@+id/splash_cover"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/splash_plane"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:src="@drawable/splash_plane" />
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="30dp">-->
+
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="Jouan Travel"
+        android:textColor="#eb7400"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--style="@style/MyProgressTheme"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:progressDrawable="@drawable/progress" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/progressBarLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:visibility="gone"-->
+    <!--android:orientation="horizontal" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

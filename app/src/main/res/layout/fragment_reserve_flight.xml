@@ -1,0 +1,416 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reserve_ll_flight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".Activity_Main$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/activity_reserve_cv_flight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:paddingLeft="@dimen/XL_pad"
+            android:paddingRight="@dimen/XL_pad">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/activity_reserve_cv_flight_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/activity_reserve_ll_flight_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/big_item_pad_min"
+                        android:paddingBottom="@dimen/big_item_pad"
+                        >
+
+                        <EditText
+                            android:id="@+id/activity_reserve_til_flight_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="right|center_vertical"
+                            android:hint="مبدا"
+                            android:padding="5dp"
+                            android:textColor="@color/third_color"
+                            android:textColorHint="@color/third_color"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="right|center_vertical"
+                            android:hint="فرودگاه کشور مبدا را انتخاب کنید"
+                            android:paddingRight="5dp"
+                            android:textColorHint="@color/colorfilter"
+                            android:textSize="@dimen/text_size_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_disabled" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_reserve_cv_flight_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/XL_pad">
+
+                    <LinearLayout
+                        android:id="@+id/activity_reserve_ll_flight_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/big_item_pad"
+                        android:paddingTop="@dimen/big_item_pad">
+
+                        <EditText
+                            android:id="@+id/activity_reserve_til_flight_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="right|center_vertical"
+                            android:hint="مقصد"
+                            android:padding="5dp"
+                            android:textColor="@color/third_color"
+                            android:textColorHint="@color/third_color"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:gravity="right|center_vertical"
+                            android:hint="فرودگاه کشور مقصد را انتخاب کنید"
+                            android:paddingRight="5dp"
+                            android:textColorHint="@color/colorfilter"
+                            android:textSize="@dimen/text_size_small" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_disabled" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/XL_pad"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/activity_reserve_til_flight_end_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="3dp">
+
+                                <EditText
+                                    android:id="@+id/activity_reserve_et_flight_end_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:focusable="false"
+                                    android:gravity="right"
+                                    android:hint="تا تاریخ"
+                                    android:padding="10dp"
+                                    android:text="5.11.95"
+                                    android:textColor="@color/color_tint"
+                                    android:textColorHint="@color/color_tint"
+                                    android:textSize="10dp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.8"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/activity_reserve_txt_flight_switch"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="10dp"
+                                android:gravity="right|center_vertical"
+                                android:paddingRight="15dp"
+                                android:text="بلیط یک طرفه" />
+
+                            <Switch
+                                android:id="@+id/activity_reserve_sw_flight_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/activity_reserve_til_flight_start_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="3dp">
+
+                                <EditText
+                                    android:id="@+id/activity_reserve_et_flight_start_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:focusable="false"
+                                    android:gravity="right"
+                                    android:hint="از تاریخ"
+                                    android:padding="10dp"
+                                    android:text="27.10.95"
+                                    android:textColor="@color/color_tint"
+                                    android:textColorHint="@color/color_tint"
+                                    android:textSize="10dp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/s_pad"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/s_pad"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/activity_reserve_til_flight_inf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="3dp">
+
+                            <EditText
+                                android:id="@+id/activity_reserve_et_flight_inf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="right"
+                                android:hint="تعداد نوزاد"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textColor="@color/color_tint"
+                                android:textColorHint="@color/color_tint"
+                                android:textSize="10dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s_pad"
+                        android:layout_marginRight="@dimen/s_pad"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/activity_reserve_til_flight_chd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="3dp">
+
+                            <EditText
+                                android:id="@+id/activity_reserve_et_flight_chd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="right"
+                                android:hint="تعداد کودک"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textColor="@color/color_tint"
+                                android:textColorHint="@color/color_tint"
+                                android:textSize="10dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s_pad"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/activity_reserve_til_flight_adl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="3dp">
+
+                            <EditText
+                                android:id="@+id/activity_reserve_et_flight_adl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:gravity="right"
+                                android:hint="تعداد بزرگسال"
+                                android:padding="10dp"
+                                android:text="1"
+                                android:textColor="@color/color_tint"
+                                android:textColorHint="@color/color_tint"
+                                android:textSize="10dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_disabled" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_reserve_cv_flight_search"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/activity_reserve_ll_flight_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/third_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+
+            <TextView
+                android:id="@+id/activity_reserve_txt_flight_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="جستجو"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

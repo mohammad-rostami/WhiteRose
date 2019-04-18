@@ -1,0 +1,319 @@
+<android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/color_back"
+    tools:context=".Activity_Main$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@color/forth_color"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="رزرو بلیط"
+                            android:textColor="@color/color_white" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@color/third_color"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="رزرو هتل"
+                            android:textColor="@color/color_white" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.25">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@color/second_color"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="رزرو تور"
+                            android:textColor="@color/color_white" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.25">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@color/first_color"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="رزرو پکیج"
+                            android:textColor="@color/color_white" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/fragment_reserve_ll_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_ticket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو بلیط"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_ticket1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو بلیط پروازهای داخلی و خارجی"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#1976D2">
+
+                        <ImageView
+                            android:id="@+id/fragment_reserve_img_ticket"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:padding="30dp"
+                            android:rotation="90"
+                            android:src="@drawable/ic_plane_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_reserve_cv_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/fragment_reserve_ll_hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_hotel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو هتل"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_hotel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو آنلاین هتل در تمامی مقاصد"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#1976D2">
+
+                        <ImageView
+                            android:id="@+id/fragment_reserve_img_hotel"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:padding="30dp"
+                            android:src="@drawable/ic_hotel_white" />
+
+                        <ImageView
+                            android:id="@+id/fragment_reserve_img_car"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:padding="30dp"
+                            android:src="@drawable/ic_car"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_reserve_cv_tour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/fragment_reserve_ll_tour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_tour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو تور"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fragment_reserve_txt_tour1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|center_vertical"
+                            android:text="رزرو تور مسافرتی به اقصی نقاط جهان"
+                            android:textColor="#767676"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#1976D2"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/fragment_reserve_img_tour"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_bagage_white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.app.FragmentTabHost>

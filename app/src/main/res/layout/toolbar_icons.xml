@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_icon_tb_main"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <LinearLayout
+        android:id="@+id/toolbar_icons_ll_profile"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/SS_icon"
+            android:layout_height="@dimen/SS_icon">
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_profile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:src="@drawable/ic_profile1" />
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_profile2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_profile2" />
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_profile4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_profile4" />
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_profile3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:src="@drawable/ic_profile3" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_profile_back" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_icons_txt_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="پروفایل"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar_icons_ll_weather"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/toolbar_icons_img_weather"
+            android:layout_width="@dimen/SS_icon"
+            android:layout_height="@dimen/SS_icon"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:src="@drawable/ic_weather"
+            android:text="btn"
+            android:tint="@color/color_white" />
+
+        <TextView
+            android:id="@+id/toolbar_icons_txt_know"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="بدانید"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar_icons_ll_plane"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/toolbar_icons_img_plane"
+            android:layout_width="@dimen/SS_icon"
+            android:layout_height="@dimen/SS_icon"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:src="@drawable/ic_outgoing"
+            android:text="btn"
+            android:tint="@color/color_white" />
+
+        <TextView
+            android:id="@+id/toolbar_icons_txt_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="رزرو"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar_icons_ll_insurance"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_insurance"
+                android:layout_width="@dimen/SS_icon"
+                android:layout_height="@dimen/SS_icon"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:src="@drawable/ic_insurance"
+                android:text="btn"
+                android:tint="@color/color_white" />
+
+            <ImageView
+                android:id="@+id/toolbar_icons_img_dollar"
+                android:layout_width="@dimen/SS_icon"
+                android:layout_height="@dimen/SS_icon"
+                android:gravity="center"
+                android:src="@drawable/ic_dollar"
+                android:text="btn"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_icons_txt_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="بیمه"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar_icons_ll_bagage"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/toolbar_icons_img_bagage"
+            android:layout_width="@dimen/SS_icon"
+            android:layout_height="@dimen/SS_icon"
+            android:gravity="center"
+            android:src="@drawable/ic_bagage_white"
+            android:text="btn" />
+
+        <TextView
+            android:id="@+id/toolbar_icons_txt_packages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="پکیج ها"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

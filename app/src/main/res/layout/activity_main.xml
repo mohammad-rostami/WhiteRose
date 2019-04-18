@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:layoutDirection="ltr"
+    android:weightSum="1"
+    tools:context=".Activity_Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="4dp">
+
+            <include
+                layout="@layout/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <rosesefid.com.whiterose.CustomViewPager
+                    android:id="@+id/activity_main_vp_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_back"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <LinearLayout
+                    android:id="@+id/hidden_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"
+                    android:orientation="vertical"
+                    android:translationZ="10dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shadow"
+                    android:translationZ="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:id="@+id/activity_main_ll_bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/toolbar_icons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <io.karim.MaterialTabs
+                        android:id="@+id/activity_main_toolbar_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_gravity="top"
+                        android:layoutDirection="ltr"
+                        android:textColor="@color/colorfilter"
+                        android:textSize="@dimen/M_text"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:mtIndicatorColor="@color/colorPrimary"
+                        app:mtIndicatorHeight="0dp"
+                        app:mtMrlRippleDiameter="0dp"
+                        app:mtPaddingMiddle="false"
+                        app:mtSameWeightTabs="true"
+                        app:mtTextColorSelected="#ffffff"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:transitionName="@string/activity_image_trans">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <include
+                layout="@layout/toolbar_icons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <io.karim.MaterialTabs
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_gravity="top"
+                android:layoutDirection="ltr"
+                android:textColor="@color/colorfilter"
+                android:textSize="@dimen/M_text"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:mtIndicatorColor="@color/colorPrimary"
+                app:mtIndicatorHeight="0dp"
+                app:mtMrlRippleDiameter="0dp"
+                app:mtPaddingMiddle="false"
+                app:mtSameWeightTabs="true"
+                app:mtTextColorSelected="#ffffff"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

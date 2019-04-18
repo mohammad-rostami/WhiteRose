@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rosesefid.com.whiterose">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".G"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Main"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Activity_Package"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity_Request"
+            android:isScrollContainer="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity_Reserve"
+            android:isScrollContainer="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity_WorldInfo"
+            android:hardwareAccelerated="true"
+            android:isScrollContainer="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".Activity_Map"
+            android:label="Map" />
+    </application>
+
+</manifest>

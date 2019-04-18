@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_package_ll_table_header"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/item_clock_ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s_pad"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/item_flight_txt_source"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Sanfransisco" />
+
+        <ImageView
+            android:id="@+id/item_flight_img_destination"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:rotation="90"
+            android:layout_marginRight="@dimen/XXL_pad"
+            android:layout_marginLeft="@dimen/XXL_pad"
+            android:src="@drawable/ic_outgoing"
+            android:tint="#999999" />
+
+        <TextView
+            android:id="@+id/item_flight_txt_destination"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Tehran" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/XXL_pad"
+            android:layout_weight="0.3"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_flight_txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sanfransisco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_flight_txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sanfransisco" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_flight_txt_air_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="Sanfransisco"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/item_flight_txt_flight_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sanfransisco"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_flight_ll_status_color"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <rosesefid.com.whiterose.VerticalTextView
+                android:id="@+id/item_flight_txt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="arrive"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+
+        ></LinearLayout>
+</android.support.v7.widget.CardView>

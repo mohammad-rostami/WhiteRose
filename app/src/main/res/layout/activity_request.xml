@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_request_ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/activity_request_sv_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/activity_request_txt_package_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="مشخصات پکیج"
+                                android:padding="10dp"
+                                android:textColor="#212121"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#e9e9e9"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_package_name_header"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:hint="نام پکیج"
+                                        android:textSize="7dp" />
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_package_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="right|center_vertical"
+                                        android:hint="تور قونیه"
+                                        android:textSize="11dp" />
+
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_flight_black_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/activity_request_hotel_name_header"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:hint="نام هتل"
+                                        android:textSize="7dp" />
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_hotel_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="right|center_vertical"
+                                        android:hint="هتل پارسیان"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_domain_black_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_dbl_header"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="right"
+                                        android:hint="DBL"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_dbl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="right"
+                                        android:hint="2000000"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_group_black_24dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_sgl_header"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="right"
+                                        android:hint="SGL"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:id="@+id/activity_request_txt_sgl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:gravity="right"
+                                        android:hint="1500000"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_person_black_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#e9e9e9"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <TextView
+                                android:id="@+id/activity_request_txt_package_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="تاریخ و تعداد نفرات"
+                                android:paddingBottom="12dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="12dp"
+                                android:textColor="#212121"
+                                android:textSize="11dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#e9e9e9"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="4dp">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/activity_request_til_adl"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8">
+
+                                            <EditText
+                                                android:id="@+id/activity_request_et_adl"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:focusable="false"
+                                                android:hint="تعداد بزرگسال"
+                                                android:text="1"
+                                                android:textSize="10dp" />
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:src="@drawable/ic_adult_black_24dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="4dp">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/activity_request_til_chd"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8">
+
+                                            <EditText
+                                                android:id="@+id/activity_request_et_chd"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:focusable="false"
+                                                android:hint="تعداد کودک"
+                                                android:text="0"
+                                                android:textSize="10dp" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:src="@drawable/ic_child_care_black_24dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="4dp">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/activity_request_til_inf"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8"
+                                            android:orientation="horizontal">
+
+                                            <EditText
+                                                android:id="@+id/activity_request_et_inf"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:focusable="false"
+                                                android:hint="تعداد نوزاد"
+                                                android:text="0"
+                                                android:textSize="10dp" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:src="@drawable/ic_inf_black_24dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="4dp">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/activity_request_til_date"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8">
+
+                                            <EditText
+                                                android:id="@+id/activity_request_et_date"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="تاریخ"
+                                                android:textSize="10dp" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:src="@drawable/ic_date_range_black_24dp" />
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="5dp"
+                                        android:layerType="software"
+                                        android:src="@drawable/dotted" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingBottom="4dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="4dp">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/input_layout_room"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8">
+
+                                            <EditText
+                                                android:id="@+id/input_room"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:focusable="false"
+                                                android:hint="تعداد اتاق"
+                                                android:text="1"
+                                                android:textSize="10dp" />
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:src="@drawable/ic_door_24dp" />
+                                    </LinearLayout>
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/activity_request_rv_suggest"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="13dp">
+
+                                    </android.support.v7.widget.RecyclerView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/activity_request_txt_login_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="اطلاعات کاربری"
+                                android:padding="10dp"
+                                android:textColor="#212121"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#e9e9e9"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="4dp">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/activity_request_til_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8">
+
+                                    <EditText
+                                        android:id="@+id/activity_request_et_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="نام و نام خانوادگی"
+                                        android:textSize="10dp" />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="17dp"
+                                    android:src="@drawable/ic_person_black_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="4dp">
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/activity_request_til_tel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8">
+
+                                    <EditText
+                                        android:id="@+id/activity_request_et_tel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="تلفن"
+                                        android:inputType="number"
+                                        android:textSize="10dp" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="17dp"
+                                    android:src="@drawable/ic_local_phone_black_24dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="4dp">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/activity_request_til_email"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8">
+
+                                    <EditText
+                                        android:id="@+id/activity_request_et_email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="پست الکترونیک"
+                                        android:textSize="10dp" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="17dp"
+                                    android:src="@drawable/ic_email_black_24dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layerType="software"
+                                android:src="@drawable/dotted" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="4dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:id="@+id/activity_request_til_address"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.8">
+
+                                        <EditText
+                                            android:id="@+id/activity_request_et_address"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="آدرس"
+                                            android:textSize="10dp" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="17dp"
+                                        android:src="@drawable/ic_place_black_24dp" />
+                                </LinearLayout>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginTop="2dp"
+                                    app:cardElevation="1dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/activity_request_ll_choose_location"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#eeeeee"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/dialog_location_img_marker"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:layout_margin="10dp"
+                                            android:src="@drawable/pin" />
+
+                                        <TextView
+                                            android:id="@+id/activity_request_txt_choose_location"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="انتخاب از روی نقشه" />
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_request_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_request_txt_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="ارسال درخواست"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
